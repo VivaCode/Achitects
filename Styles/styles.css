@@ -208,13 +208,6 @@ header .nav-container .logo-text {
 
 header .nav-container .nav {
   display: none;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  opacity: 0.9;
 }
 
 header .nav-container .nav .nav-link {
@@ -238,6 +231,30 @@ header .nav-container .nav .close {
 header .nav-container .nav .close:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+header .nav-container .full-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #97a4b0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0.9;
 }
 
 header .menu {
