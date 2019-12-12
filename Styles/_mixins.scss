@@ -1,0 +1,18 @@
+@mixin center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin button-creator($width, $height) {
+	@include center();
+	width: $width;
+	height: $height;
+	cursor: pointer;
+}
