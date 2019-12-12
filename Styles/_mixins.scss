@@ -1,0 +1,39 @@
+@mixin display($display) {
+	display: $display;
+}
+@mixin center() {
+	justify-content: center;
+	align-items: center;
+}
+@mixin centered-flex() {
+	@include center();
+	display: flex;
+}
+@mixin scale-img() {
+	width: 100%;
+	height: auto;
+}
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin button-creator($width, $height) {
+	@include centered-flex();
+	width: $width;
+	height: $height;
+	cursor: pointer;
+	color: #000000;
+	background-color: #ffffff;
+	border: #000000 1px solid;
+}
+@mixin over-lay() {
+	text-align: center;
+	border: #ffffff solid 1px;
+	background-color: #d8d8d8;
+	height: 80px;
+	width: 300px;
+	font-weight: normal;
+	font-size: 28px;
+	letter-spacing: 4px;
+}

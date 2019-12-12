@@ -142,13 +142,18 @@ table {
 
 body {
   width: 100%;
+  height: 100% vh;
   font-size: 16px;
-  font-weight: regular;
   line-height: 24px;
   background-color: #ffffff;
   color: #222222;
   font-family: Roboto, arial, sans-serif;
-  font-weight: regular;
+  font-weight: normal;
+}
+
+.main-container {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .main-container h2,
@@ -171,7 +176,7 @@ body {
 
 header {
   width: 100%;
-  background-color: #828282;
+  background-color: #97a4b0;
   color: #ffffff;
   height: 50px;
   display: -webkit-box;
@@ -252,11 +257,184 @@ header .menu {
 
 .cta .cta-text {
   font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 75px;
+  line-height: 90px;
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  bottom: 50px;
+  left: 10%;
+}
+
+.home {
+  border: red solid 1px;
+}
+
+.home .card-group {
+  display: block;
+}
+
+.home .card-group .flipped-cards {
+  display: block;
+  margin: 50px 30px 0 30px;
+}
+
+.home .card-group .flipped-cards .cards-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 360px;
+  width: 90%;
+  margin: 25px;
+  padding-top: 20px;
+}
+
+.home .card-group .flipped-cards .cards-top img {
+  width: 50%;
+  height: auto;
+  padding-left: 50px;
+}
+
+.home .card-group .flipped-cards .cards-top .top-text {
+  justify-items: left;
+  margin: 50px 15px;
+  line-height: 24px;
+  padding-right: 10px;
+}
+
+.home .card-group .flipped-cards .cards-top .top-text h3,
+.home .card-group .flipped-cards .cards-top .top-text p {
+  margin-top: 5px;
+}
+
+.home .card-group .flipped-cards .cards-top .top-text button {
+  font-size: 1rem;
+  margin: 25px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+  border: #000000 1px solid;
+}
+
+.home .card-group .flipped-cards .cards-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 360px;
+  width: 90%;
+  margin: 25px;
+  padding-top: 20px;
+}
+
+.home .card-group .flipped-cards .cards-bottom img {
+  width: 50%;
+  height: auto;
+}
+
+.home .card-group .flipped-cards .cards-bottom .bottom-text {
+  width: 50%;
+  margin: 50px;
+  line-height: 24px;
+  padding-left: 15px;
+}
+
+.home .card-group .flipped-cards .cards-bottom .bottom-text h3,
+.home .card-group .flipped-cards .cards-bottom .bottom-text p {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.home .card-group .flipped-cards .cards-bottom .bottom-text button {
+  font-size: 1rem;
+  margin: 25px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+  border: #000000 1px solid;
+}
+
+.home .card-group .stacked-cards {
+  max-width: 100%;
+  margin: 60px 40px;
+}
+
+.home .card-group .stacked-cards .cards-2 {
+  margin: 30px 0;
+}
+
+.home .card-group .stacked-cards .cards-2 .stacked-cards-headers {
+  display: block;
+  position: relative;
+}
+
+.home .card-group .stacked-cards .cards-2 .stacked-cards-headers img {
+  width: 100%;
+  height: 275px;
+}
+
+.home .card-group .stacked-cards .cards-2 .stacked-cards-headers .over-lay-right {
+  position: absolute;
+  padding-top: 27px;
+  text-align: center;
+  border: #ffffff solid 1px;
+  background-color: #d8d8d8;
+  height: 80px;
+  width: 300px;
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: 4px;
+  right: 0;
+  bottom: -25px;
+}
+
+.home .card-group .stacked-cards .cards-2 .stacked-cards-headers .over-lay-left {
+  position: absolute;
+  padding-top: 27px;
+  text-align: center;
+  border: #ffffff solid 1px;
+  background-color: #d8d8d8;
+  height: 80px;
+  width: 300px;
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: 4px;
+  left: 0;
+  bottom: -25px;
+}
+
+.home .card-group .stacked-cards .cards-2 .stacked-cards-p {
+  margin: 0px 15px;
+}
+
+.home .card-group .stacked-cards .cards-2 .stacked-cards-p p {
+  text-align: center;
+  margin: 10% 20%;
+  line-height: 28px;
+  font-size: 1.25rem;
 }
 
 .footer-container {
