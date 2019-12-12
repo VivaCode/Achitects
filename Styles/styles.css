@@ -264,10 +264,6 @@ header .menu {
   left: 10%;
 }
 
-.home {
-  border: red solid 1px;
-}
-
 .home .card-group {
   display: block;
 }
@@ -441,11 +437,16 @@ header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: regular;
   color: #ffffff;
   background-color: #828282;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
+  width: 100%;
+  padding: 5px;
 }
 
 .footer-container h2,
@@ -453,8 +454,43 @@ header .menu {
 .footer-container h4,
 .footer-container h5,
 .footer-container h6 {
+  margin: 10px 0;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
+}
+
+.footer-container .foot-box1 {
+  width: 35%;
+}
+
+.footer-container .foot-box1 input {
+  margin: 10px 0;
+}
+
+.footer-container .foot-box1 p {
+  margin: 10px 0;
+}
+
+.footer-container .foot-box2 {
+  width: 60%;
+  padding: 15px;
+  -webkit-columns: 3;
+          columns: 3;
+}
+
+.footer-container .foot-box2 .address {
+  width: 115px;
+}
+
+.footer-container .foot-box2 .address :first-child {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #828282;
+  font-size: 16px;
+  text-align: center;
+  margin-top: -15px;
 }
 /*# sourceMappingURL=styles.css.map */
