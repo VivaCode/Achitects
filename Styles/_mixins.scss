@@ -1,18 +1,40 @@
+@mixin display($display) {
+	display: $display;
+}
 @mixin center() {
-	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
+@mixin centered-flex() {
+	@include center();
+	display: flex;
+}
+@mixin scale-img() {
+	width: 100%;
+	height: auto;
+}
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
 	border-radius: $radius;
 }
-
 @mixin button-creator($width, $height) {
-	@include center();
+	@include centered-flex();
 	width: $width;
 	height: $height;
 	cursor: pointer;
+	color: #000000;
+	background-color: #ffffff;
+	border: #000000 1px solid;
+}
+@mixin over-lay() {
+	text-align: center;
+	border: red solid 1px;
+	background-color: #d8d8d8;
+	position: absolute;
+	height: 50px;
+	width: 150px;
+	font-weight: regular;
+	font-size: 20px;
+	letter-spacing: 1.5px;
 }
